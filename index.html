@@ -2,17 +2,24 @@
 layout: default
 title: James Luberda
 ---
-      <header>
-        <h1>James Luberda</h1>
-        <p></p>
-
-
-        <p class="view"><a href="https://github.com/jamesluberda">View My GitHub Profile</a></p>
-
-      </header>
+<!--
       <section>
-        <p>Recently compiled Perl 4.036 on my Tadpole/IBM N40 laptop running AIX 3.2.5. It's an interesting machine. If you're not familiar, <a href="https://books.google.com/books?id=i9Cu5oVMHRwC&amp;pg=PA29&amp;lpg=PA29&amp;dq=aix+tadpole+computerworld&amp;source=bl&amp;sa=X#v=onepage&amp;q=aix%20tadpole%20computerworld&amp;f=false">this</a> makes for an interesting introduction, dating from its announcement in 1994.</p>
+        <h1>James Luberda</h1>
+        <p class="view"><a href="https://github.com/jamesluberda">View My GitHub Profile</a></p>
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+-->
+      <section>
+        Recently compiled Perl 4.036 on my Tadpole/IBM N40 laptop running AIX 3.2.5. It's an interesting machine. If you're not familiar, <a href="https://books.google.com/books?id=i9Cu5oVMHRwC&amp;pg=PA29&amp;lpg=PA29&amp;dq=aix+tadpole+computerworld&amp;source=bl&amp;sa=X#v=onepage&amp;q=aix%20tadpole%20computerworld&amp;f=false">this</a> makes for a colorful introduction, dating from its announcement in 1994.
+      </section>
+      <section>
+        <h2>Miscellany</h2>
+	<ul>
+  	{% for post in site.posts %}
+    		<li>
+      		<a href="{{ post.url }}">{{ post.title }}</a>
+    		</li>
+  	{% endfor %}
+	</ul>
+      </section>
+	{{ site.github.repository_url }}
+

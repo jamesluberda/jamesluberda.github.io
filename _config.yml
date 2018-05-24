@@ -1,2 +1,12 @@
-name: James Luberda
-markdown: kramdown
+theme: jekyll-theme-minimal
+title: James Luberda
+author: James Luberda
+#logo: /assets/img/logo.png
+description: Personal GitHub Page
+show_downloads: false
+show_tags: false
+google_analytics:
+repository: jamesluberda/jamesluberda.github.io
+github: [metadata]
+plugins:
+        - jekyll-github-metadata
