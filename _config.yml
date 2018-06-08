@@ -6,7 +6,18 @@ description: Personal GitHub Page
 show_downloads: false
 show_tags: false
 google_analytics:
-repository: jamesluberda/jamesluberda.github.io
-github: [metadata]
-plugins:
-        - jekyll-github-metadata
+exclude:
+        - '*.sh'
+        - '*.log'
+        - 'Gem*'
+        - 'scrap'
+        - 'Jenkinsfile'
+        - 'Dockerfile'
+
+#the following entries are commented out, were part of attempts to get metadata working
+#based on various online sources; appears as long as origin is set, none needed,
+#and last two lines appear to actually have broken the metadata import when used
+#repository: jamesluberda/jamesluberda.github.io
+#github: [metadata]
+#plugins:
+#        - jekyll-github-metadata
