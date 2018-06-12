@@ -3,7 +3,7 @@
 # alternative to specifying user, could just use viewer {
 # however, this will make the data structure incompatible
 # with the liquid loop in index.html
-QUERY=$(cat <<-EOF
+QUERY=$(cat <<-EOS
 { \
   "query":  "query { \
     viewer { \
@@ -18,10 +18,10 @@ QUERY=$(cat <<-EOF
     } \
   }" \
 } 
-EOF
+EOS
 )
 
-QUERY=$(cat <<-EOF
+QUERY=$(cat <<-EOS
 { \
   "query":  "query { \
     user (login: jamesluberda) { \
@@ -36,7 +36,7 @@ QUERY=$(cat <<-EOF
     } \
   }" \
 } 
-EOF
+EOS
 )
 
 curl -H "Authorization: bearer $JEKYLL_GITHUB_TOKEN" -X POST -d "$QUERY" https://api.github.com/graphql | tee _data/gists-data.json
