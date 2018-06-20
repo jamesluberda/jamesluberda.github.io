@@ -7,12 +7,15 @@ show_downloads: false
 show_tags: false
 google_analytics:
 exclude:
-        - '*.sh'
-        - '*.log'
-        - 'Gem*'
-        - 'scrap'
-        - 'Jenkinsfile'
-        - 'Dockerfile'
+  - '*.sh'
+  - '*.log'
+  - 'Gem*'
+  - 'scrap'
+  - 'Jenkinsfile'
+  - 'Dockerfile'
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 #the following entries are commented out, were part of attempts to get metadata working
 #based on various online sources; appears as long as origin is set, none needed,
