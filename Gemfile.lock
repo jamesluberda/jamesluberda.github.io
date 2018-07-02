@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/jamesluberda/jekyll-gists_meta.git
+  revision: 49cbe7659818a005c7d863eaf28fa09565da60d3
+  branch: master
+  specs:
+    jekyll-gists_meta (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -271,6 +278,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-admin
+  jekyll-gists_meta!
   jekyll-info
 
 BUNDLED WITH
