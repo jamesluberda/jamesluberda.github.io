@@ -17,7 +17,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-info
-
+  - jekyll-gists-meta
+gists_user:
+         
 #the following entries are commented out, were part of attempts to get metadata working
 #based on various online sources; appears as long as origin is set, none needed,
 #and last two lines appear to actually have broken the metadata import when used

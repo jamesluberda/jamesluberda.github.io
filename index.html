@@ -22,11 +22,11 @@ title: James Luberda
 	</ul>
       </section>
 
-      {% if site.data.gists-data %}
+      {% if site.data.gists-meta-data %}
         <section>
           <h2>Gists</h2>
           <ul>
-        {% for myedge in site.data.gists-data.data.user.gists.edges %}
+        {% for myedge in site.data.gists-meta-data.data.user.gists.edges %}
           <li>
          <a href="https://gist.github.com/{{ myedge.node.name }}">{{myedge.node.description}}</a>
           </li>
