@@ -6,3 +6,5 @@ group :jekyll_plugins do
   gem 'jekyll-info' 
   gem 'jekyll-gists-meta'
 end
+
+gem "html-proofer", "~> 3.9"
