@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 title: James Luberda
 author: James Luberda
-#logo: /assets/img/logo.png
+logo: /assets/img/luberda_w_mt.jpg
 description: Personal GitHub Page
 show_downloads: false
 show_tags: false
@@ -17,8 +17,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-info
+#  - github-pages-unscramble
   - jekyll-gists-meta
-gists_user:
+#gists_user:
+#plugins_dir: _test_plugins
          
 #the following entries are commented out, were part of attempts to get metadata working
 #based on various online sources; appears as long as origin is set, none needed,
